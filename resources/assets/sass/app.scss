@@ -38,10 +38,12 @@
   flex-direction: column;
   width: 65%;
   margin: 30px 10px 10px 30px;
+  position: fixed;
+  top: 0;
 }
 
 .add-product {
-  position: absolute;
+  position: fixed;
   left: 35%;
   top: 60%;
   flex-direction: space-between;

@@ -102,13 +102,15 @@ class Main extends Component {
                         </ul>
 
                     </div>
-                    { !this.state.isEdit ? <Product product={this.state.currentProduct}
-                                                    onDeleteProduct={this.handleDeleteProduct}
-                                                    onUpdateProduct={this.handleUpdateProduct} />
-                        : <EditProduct product={this.state.currentProduct} onBack={this.handleUpdateProduct}
-                                                                            onUpdate={this.doUpdateProduct} />
-                    }
-                    <AddProduct onAdd={this.handleAddProduct} />
+                    <div className="product-info">
+                        { !this.state.isEdit ? <Product product={this.state.currentProduct}
+                                                        onDeleteProduct={this.handleDeleteProduct}
+                                                        onUpdateProduct={this.handleUpdateProduct} />
+                            : <EditProduct product={this.state.currentProduct} onBack={this.handleUpdateProduct}
+                                           onUpdate={this.doUpdateProduct} />
+                        }
+                        <AddProduct onAdd={this.handleAddProduct} />
+                    </div>
                 </div>
 
             </div>
